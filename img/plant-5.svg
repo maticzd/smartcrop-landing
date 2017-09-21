@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 558.08">
+  <defs>
+    <style>
+      svg{padding-top:10px;background:#53c419}
+      .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:16px;}
+      .path1 {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 4s ease forwards;/*animation-iteration-count: infinite;*/}
+      .path2 {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 3s ease forwards; animation-delay: 1.5s;/*animation-iteration-count: infinite;*/}
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </defs>
+  <title>plant-5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_3" data-name="Layer 3">
+      <path stroke-linecap="round" class="cls-1 path1" d="M286,245.08s12-240,228-237C514,8.08,518,282.08,286,245.08Z"/>
+    </g>
+    <g id="Layer_4" data-name="Layer 4">
+      <path stroke-linecap="round" class="cls-1 path2" d="M235,558.08v-310s-5-245-227-240c0,0,0,266,227,240"/>
+    </g>
+  </g>
+</svg>

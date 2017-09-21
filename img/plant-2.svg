@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 492.06">
+  <defs>
+    <style>
+      svg{padding-top:10px;}
+      .cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px}
+      .path {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 3s linear forwards;/*animation-iteration-count: infinite;*/}
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </defs>
+  <title>plant-2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <path stroke-linecap="round" class="cls-1 path" d="M.5,492.06s0-164,63-277,76-215,76-215"/>
+    </g>
+  </g>
+</svg>
