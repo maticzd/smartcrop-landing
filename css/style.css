@@ -151,6 +151,33 @@ body {
   transform: scaleX(1);
 }
 
+.navbar-default .navbar-collapse {
+    border: none;
+    background: #53C419;
+}
+
+.navbar-toggle {
+  margin-top: 19px;
+  margin-right: 10px;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.navbar-scroll .navbar-toggle {
+  margin-top: 14px;
+  border: none;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle:focus {
+  background: transparent !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 .home-hero-section {
   background-color: #53C419;
   min-height: 500px;
