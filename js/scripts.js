@@ -3,8 +3,10 @@
 /* Sticky menu animations */
 jQuery(window).on('scroll', function () {
   if (jQuery(this).scrollTop() > 1) {
+    jQuery('.menu').addClass('menu-scroll')
     jQuery('.navbar-fixed-top').addClass('navbar-scroll')
   } else {
+    jQuery('.menu').removeClass('menu-scroll')
     jQuery('.navbar-fixed-top').removeClass('navbar-scroll')
   }
 })
@@ -37,3 +39,15 @@ jQuery('.animsition').animsition({
   overlayParentElement: 'body',
   transition: function (url) { window.location.href = url }
 })
+
+jQuery('.menu').click(function() {
+  jQuery('.menu').toggleClass('open');
+  jQuery('.overlay').toggleClass('overlayopen');
+});
+
+jQuery('.overlay ul li a').click(function() {
+  jQuery('.menu').toggleClass('open');
+  jQuery('.overlay').toggleClass('overlayopen');
+});
+
+$("body").scrollspy({ target: ' ', offset: 100 });

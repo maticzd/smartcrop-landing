@@ -11,17 +11,11 @@
   <link rel="stylesheet" href="css/animsition.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="animsition" data-spy="scroll" data-offset="100" data-target="#navegacion">
+<body class="animsition">
   <header>
-    <nav id="navegacion" class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="index.html">
             <img src="img/smartcrop-text-logo.svg" alt="Smartcrop">
           </a>
@@ -30,7 +24,7 @@
           </span>
         </div>
 
-        <div class="collapse navbar-collapse" id="nav">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#product">Smartcrop</a></li>
@@ -128,6 +122,29 @@
       </div>
     </div>
   </section>
+
+  <div class="menu visible-xs">
+    <span class="menu-icon">
+      <span class="menu-line menu-line-1"></span>
+      <span class="menu-line menu-line-2"></span>
+      <span class="menu-line menu-line-3"></span>
+    </span>
+  </div>
+
+  <div class="overlay">
+    <nav id="overlay-nav" class="navbar">
+      <div class="container">
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#product">Smartcrop</a></li>
+            <li><a href="#section2">Seccion 2</a></li>
+            <li><a href="#section3">Seccion 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
