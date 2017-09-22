@@ -40,6 +40,7 @@ body {
 
 .navbar-header {
   height: 70px;
+  width: 365px;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
