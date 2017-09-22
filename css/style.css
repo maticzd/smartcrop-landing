@@ -187,7 +187,8 @@ body {
 }
 
 .home-hero-section {
-  background: url(https://images.unsplash.com/uploads/14114005966624c90b007/60cc31c4?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=) center right;
+  background: url(../img/hero-section-bg.jpg) center right;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
