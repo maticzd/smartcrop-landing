@@ -1,6 +1,6 @@
 /* Sticky menu animations */
 jQuery(window).on("scroll", function () {
-    if (jQuery(this).scrollTop() > 50) {
+    if (jQuery(this).scrollTop() > 1) {
         jQuery(".navbar-fixed-top").addClass("navbar-scroll");
     }
     else {
