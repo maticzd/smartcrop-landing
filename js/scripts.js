@@ -1,4 +1,4 @@
-/* global jQuery, $, SmoothScroll */
+/* global jQuery, SmoothScroll */
 
 /* Sticky menu animations */
 jQuery(window).on('scroll', function () {
@@ -32,8 +32,8 @@ jQuery('.animsition').animsition({
   browser: ['animation-duration', '-webkit-animation-duration'],
   // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
   // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-  overlay : false,
-  overlayClass : 'animsition-overlay-slide',
-  overlayParentElement : 'body',
+  overlay: false,
+  overlayClass: 'animsition-overlay-slide',
+  overlayParentElement: 'body',
   transition: function(url){ window.location.href = url; }
 })
