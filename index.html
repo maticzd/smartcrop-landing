@@ -7,12 +7,12 @@
   <title>Smartcrop</title>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-offset="60" data-target="#navegacion">
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navegacion" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion" aria-expanded="false">
@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img src="img/smartcrop-text-logo.svg" height="40" alt="Smartcrop">
+            <img src="img/smartcrop-text-logo.svg" alt="Smartcrop">
           </a>
           <span class="navbar-slogan visible-lg-inline">
             <p>Conectate con la naturaleza</p>
@@ -31,8 +31,8 @@
 
         <div class="collapse navbar-collapse" id="navegacion">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Servicios</a></li>
             <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
@@ -41,24 +41,24 @@
     </nav>
   </header>
 
-  <section class="home-hero-section">
-    <div class="container">
-      <div class="hero-content">
+  <section id="home" class="home-hero-section">
+    <div class="hero-content">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 left">
+          <div class="col-sm-6 left">
             <h1>Lorem ipsum</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             <div class="btn btn-primary">Conocer más</div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <span class="circle"></span>
             <span class="circle"></span>
             <span class="circle"></span>
             <span class="circle"></span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.56 558">
+            <svg width="390" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 570">
               <defs>
                 <style>
-                  svg{padding-top:25px; padding-left: 80px;}
+                  svg{padding-top:10px; padding-left: 10px;}
                   .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:20px;}
                 .path1 {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 5s ease forwards; animation-delay: 3s;/*animation-iteration-count: infinite;*/}
               .path2 {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 5s ease forwards; animation-delay: 5s;/*animation-iteration-count: infinite;*/}
@@ -87,6 +87,22 @@
       </div>
     </div>
   </section>
-  
+
+  <section id="services">
+    <div class="services-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            Hola
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
