@@ -252,7 +252,17 @@ body {
   }
 }
 
-#services {
+#section1 {
+  background-color: #fafaf8;
+  min-height: 800px;
+}
+
+#section2 {
+  background-color: #fff;
+  min-height: 800px;
+}
+
+#section3 {
   background-color: #fafaf8;
   min-height: 800px;
 }
