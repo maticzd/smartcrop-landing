@@ -24,7 +24,7 @@ $(document).ready(function () {
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
-    loadingParentElement: 'html', // animsition wrapper element
+    loadingParentElement: 'body', // animsition wrapper element
     loadingClass: 'animsition-loading',
     loadingInner: '', // e.g '<img src="loading.svg" />'
     timeout: false,
