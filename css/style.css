@@ -41,6 +41,11 @@ body {
   height: 60px;
 }
 
+.navbar-scroll-color {
+  background: rgb(58,96,27);
+  height: 60px;
+}
+
 .navbar-header {
   height: 70px;
   -webkit-transition: 0.2s ease-in-out;

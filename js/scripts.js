@@ -1,13 +1,27 @@
 /* global jQuery, $, SmoothScroll */
 
 /* Sticky menu animations */
+var viewportHeight = $(window).height()
+var windowHeight
+if (viewportHeight > 650) {
+  windowHeight = 650
+} else {
+  windowHeight = viewportHeight
+}
 jQuery(window).on('scroll', function () {
-  if (jQuery(this).scrollTop() > 1) {
+  if (jQuery(this).scrollTop() > 1 && jQuery(this).scrollTop() < windowHeight) {
+    console.log('mayor a 1 y menor que window')
     jQuery('.menu').addClass('menu-scroll')
     jQuery('.navbar-fixed-top').addClass('navbar-scroll')
-  } else {
+    jQuery('.navbar-fixed-top').css('background', 'rgba(58,96,27,.64)')
+  } else if (jQuery(this).scrollTop() > windowHeight) {
+    console.log('mayor que window')
+    jQuery('.navbar-fixed-top').css('background', 'rgb(58,96,27)')
+  } else if (jQuery(this).scrollTop() < 1) {
+    console.log('menor que 1')
     jQuery('.menu').removeClass('menu-scroll')
     jQuery('.navbar-fixed-top').removeClass('navbar-scroll')
+    jQuery('.navbar-fixed-top').css('background', 'none')
   }
 })
 
