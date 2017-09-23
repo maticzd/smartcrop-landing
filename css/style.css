@@ -339,7 +339,7 @@ body {
 }
 
 .product-section .product-content .product-description .right h3{
-  color: #81996d;
+  color: rgb(55,101,18);
 }
 
 .product-section .product-content .product-description .right p{
@@ -384,7 +384,7 @@ body {
   width: 120px;
 }
 .product-section .product-content .product-steps .step h4 {
-  color: #81996d;
+  color: rgb(55,101,18);
   font-family: 'Comfortaa', cursive;
   margin: 30px 0 20px 0;
 }
