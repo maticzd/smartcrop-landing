@@ -283,39 +283,49 @@ body {
 
 @media (max-width: 768px) {
   #product {
-    padding: 100px 0;
+    padding: 100px 0 80px 0;
   }
 }
 
-#product .product-content .left {
+#product .product-content .product-description {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  #product .product-content .product-description {
+    margin-bottom: 80px;
+  }
+}
+
+#product .product-content .product-description .left {
   text-align: center;
 }
 
-#product .product-content .right {
+#product .product-content .product-description .right {
   text-align: left;
   padding-top: 20px;
   padding-right: 100px;
 }
 
 @media (max-width: 768px) {
-  #product .product-content .right {
+  #product .product-content .product-description .right {
     padding-right: 15px;
   }
 }
 
-#product .product-content .right h2{
+#product .product-content .product-description .right h2{
   font-family: 'Comfortaa', cursive;
   position: relative;
   padding-bottom: 15px;
 }
 
 @media (max-width: 768px) {
-  #product .product-content .right h2{
+  #product .product-content .product-description .right h2{
     margin-top:60px;
   }
 }
 
-#product .product-content .right h2:before {
+#product .product-content .product-description .right h2:before {
   content: "";
   position: absolute;
   width: 50px;
@@ -323,13 +333,60 @@ body {
   border-bottom: 4px solid #eee;
 }
 
-#product .product-content .right h3{
+#product .product-content .product-description .right h3{
   color: #81996d;
 }
 
-#product .product-content .right p{
+#product .product-content .product-description .right p{
   color: #a6aaae;
   padding-top: 20px;
+}
+
+#product .product-content .product-steps {
+  text-align: center;
+  position: relative;
+}
+
+#product .product-content .product-steps h3 {
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 60px;
+}
+
+#product .product-content .product-steps:before {
+  top: 165px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 70%;
+  margin-left: 15%;
+  height: 2px;
+  background-color: rgba(129,153,109,.23);
+}
+
+@media (max-width: 768px) {
+  #product .product-content .product-steps:before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #product .product-content .product-steps .step {
+    margin-bottom: 50px;
+  }
+}
+
+#product .product-content .product-steps .step img {
+  width: 150px;
+}
+#product .product-content .product-steps .step h4 {
+  font-family: 'Comfortaa', cursive;
+  margin: 30px 0 20px 0;
+  color: #81996d;
+}
+
+#product .product-content .product-steps .step p {
+  padding: 0 15px;
+  color: #a6aaae;
 }
 
 #section2 {
