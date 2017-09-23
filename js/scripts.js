@@ -8,14 +8,16 @@ if (viewportHeight > 650) {
 } else {
   windowHeight = viewportHeight
 }
-jQuery(window).on('scroll', function () {
+
+jQuery(window).scroll(function () {
   if (jQuery(this).scrollTop() > 1 && jQuery(this).scrollTop() < windowHeight) {
     jQuery('.menu').addClass('menu-scroll')
     jQuery('.navbar-fixed-top').addClass('navbar-scroll')
     jQuery('.navbar-fixed-top').css('background', 'rgba(58,96,27,.64)')
-  } else if (jQuery(this).scrollTop() > windowHeight) {
+  } else if (jQuery(this).scrollTop() >= windowHeight) {
     jQuery('.navbar-fixed-top').css('background', 'rgb(55,101,18)')
-  } else if (jQuery(this).scrollTop() < 1) {
+    jQuery('.navbar-fixed-top').addClass('navbar-scroll')
+  } else if (jQuery(this).scrollTop() <= 1) {
     jQuery('.menu').removeClass('menu-scroll')
     jQuery('.navbar-fixed-top').removeClass('navbar-scroll')
     jQuery('.navbar-fixed-top').css('background', 'none')
