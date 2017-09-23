@@ -394,9 +394,59 @@ body {
   padding: 0 15px;
 }
 
-#section2 {
+.about-us-section {
   background-color: #fafaf8;
-  min-height: 800px;
+  padding: 140px 0;
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 100px 0 80px 0;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description .right {
+  text-align: center;
+}
+
+.about-us-section .about-us-content .about-us-description .left {
+  text-align: left;
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-description .left {
+    padding-right: 15px;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description .left h2{
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-description .left h2{
+    margin-top:60px;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description .left h2:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  border-bottom: 4px solid #eee;
+}
+
+.about-us-section .about-us-content .about-us-description .left h3{
+  color: rgb(55,101,18);
+}
+
+.about-us-section .about-us-content .about-us-description .left p{
+  color: #a6aaae;
+  padding-top: 20px;
 }
 
 #section3 {
