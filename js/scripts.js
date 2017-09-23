@@ -43,11 +43,13 @@ jQuery('.animsition').animsition({
 jQuery('.menu').click(function() {
   jQuery('.menu').toggleClass('open');
   jQuery('.overlay').toggleClass('overlayopen');
+  jQuery('body').toggleClass('stop-scrolling');
 });
 
 jQuery('.overlay ul li a').click(function() {
   jQuery('.menu').toggleClass('open');
   jQuery('.overlay').toggleClass('overlayopen');
+  jQuery('body').toggleClass('stop-scrolling');
 });
 
 $("body").scrollspy({ target: ' ', offset: 100 });

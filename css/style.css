@@ -391,6 +391,11 @@ body {
     animation: pulse 8s 6s linear infinite
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .menu {
   position: fixed;
   top: 25px;
