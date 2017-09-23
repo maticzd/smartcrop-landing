@@ -353,7 +353,7 @@ body {
 }
 
 #product .product-content .product-steps:before {
-  top: 165px;
+  top: 145px;
   bottom: 0;
   position: absolute;
   content: " ";
