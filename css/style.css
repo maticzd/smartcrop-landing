@@ -530,7 +530,7 @@ body {
   top:0;
   left: 0;
   width: 100%;
-  background: #81996d;
+  background: rgb(55, 101, 18);
   opacity: 0;
   visibility: hidden;
   z-index: 1033;
