@@ -398,12 +398,12 @@ body {
 
 .about-us-section {
   background-color: #fafaf8;
-  padding: 100px 0 70px 0;
+  padding: 100px 0;
 }
 
 @media (max-width: 768px) {
   .about-us-section {
-    padding: 40px 0 100px 0;
+    padding: 40px 0 90px 0;
   }
 }
 
@@ -462,14 +462,30 @@ body {
   text-align: center;
 }
 
-.about-us-section .about-us-content .about-us-team {
+.about-us-section .about-us-content .about-us-team.line-1 {
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-team.line-1 {
+    margin-bottom: 0;
+  }
 }
 
 .about-us-section .about-us-content .about-us-team h3 {
   font-family: 'Comfortaa', cursive;
   margin-bottom: 60px;
   color: #2f312f;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-team .member {
+    margin-bottom: 50px;
+  }
+
+  .about-us-section .about-us-content .about-us-team .member:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .about-us-section .about-us-content .about-us-team .member img {
