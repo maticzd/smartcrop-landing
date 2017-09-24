@@ -407,13 +407,18 @@ body {
   }
 }
 
+.about-us-section .about-us-content .about-us-description {
+  margin-bottom: 90px;
+}
+
 .about-us-section .about-us-content .about-us-description .right {
   text-align: center;
+  padding-top: 10px;
 }
 
 .about-us-section .about-us-content .about-us-description .left {
   text-align: left;
-  padding-left: 100px;
+  padding-left: 140px;
 }
 
 @media (max-width: 768px) {
@@ -451,6 +456,30 @@ body {
 .about-us-section .about-us-content .about-us-description .left p{
   color: #a6aaae;
   padding-top: 20px;
+}
+
+.about-us-section .about-us-content .about-us-team {
+  text-align: center;
+}
+
+.about-us-section .about-us-content .about-us-team h3 {
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 60px;
+  color: #2f312f;
+}
+
+.about-us-section .about-us-content .about-us-team .member img {
+  width: 150px;
+}
+
+.about-us-section .about-us-content .about-us-team .member h4 {
+  color: #3cac54;
+  font-family: 'Comfortaa', cursive;
+  margin: 30px 0 20px 0;
+}
+
+.about-us-section .about-us-content .about-us-team .member p {
+  color: #a6aaae;
 }
 
 #section3 {
