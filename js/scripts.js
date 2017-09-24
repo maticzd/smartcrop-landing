@@ -179,5 +179,5 @@ toastr.options = {
 }
 
 $('.btn-send').click(function () {
-  toastr.success('Tu mensaje ha sido enviado correctamente, nos comunicaremos contigo lo antes posible.', 'Gracias!', {timeOut: 10000})
+  toastr.success('Tu mensaje ha sido enviado correctamente, nos comunicaremos contigo lo antes posible.', 'Gracias!', {timeOut: 3000})
 })
