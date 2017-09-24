@@ -701,6 +701,7 @@ footer .copyright {
 
 footer .social-links{
   float: right;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
