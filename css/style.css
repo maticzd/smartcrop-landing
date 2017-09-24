@@ -398,7 +398,7 @@ body {
 
 .about-us-section {
   background-color: #fafaf8;
-  padding: 100px 0;
+  padding: 100px 0 70px 0;
 }
 
 @media (max-width: 768px) {
