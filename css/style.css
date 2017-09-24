@@ -283,7 +283,7 @@ body {
 
 .product-section {
   background-color: #fff;
-  padding: 140px 0;
+  padding: 140px 0 100px 0;
 }
 
 @media (max-width: 768px) {
@@ -322,6 +322,7 @@ body {
   font-family: 'Comfortaa', cursive;
   position: relative;
   padding-bottom: 15px;
+  color: #2f312f;
 }
 
 @media (max-width: 768px) {
@@ -339,7 +340,7 @@ body {
 }
 
 .product-section .product-content .product-description .right h3{
-  color: rgb(55,101,18);
+  color: #3cac54;
 }
 
 .product-section .product-content .product-description .right p{
@@ -355,6 +356,7 @@ body {
 .product-section .product-content .product-steps h3 {
   font-family: 'Comfortaa', cursive;
   margin-bottom: 60px;
+  color: #2f312f;
 }
 
 .product-section .product-content .product-steps:before {
@@ -365,7 +367,7 @@ body {
   width: 70%;
   margin-left: 15%;
   height: 2px;
-  background-color: rgba(129,153,109,.23);
+  background-color: #e2f3e6;
 }
 
 @media (max-width: 768px) {
@@ -384,7 +386,7 @@ body {
   width: 120px;
 }
 .product-section .product-content .product-steps .step h4 {
-  color: rgb(55,101,18);
+  color: #3cac54;
   font-family: 'Comfortaa', cursive;
   margin: 30px 0 20px 0;
 }
@@ -396,7 +398,7 @@ body {
 
 .about-us-section {
   background-color: #fafaf8;
-  padding: 140px 0;
+  padding: 100px 0;
 }
 
 @media (max-width: 768px) {
@@ -425,6 +427,7 @@ body {
   font-family: 'Comfortaa', cursive;
   position: relative;
   padding-bottom: 15px;
+  color: #2f312f;
 }
 
 @media (max-width: 768px) {
@@ -442,7 +445,7 @@ body {
 }
 
 .about-us-section .about-us-content .about-us-description .left h3{
-  color: rgb(55,101,18);
+  color: #3cac54;
 }
 
 .about-us-section .about-us-content .about-us-description .left p{
@@ -581,7 +584,7 @@ body {
   top:0;
   left: 0;
   width: 100%;
-  background: rgb(55, 101, 18);
+  background: #3cac54;
   opacity: 0;
   visibility: hidden;
   z-index: 1033;

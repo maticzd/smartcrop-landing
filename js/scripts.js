@@ -17,7 +17,7 @@ jQuery(window).scroll(function () {
   } else if (jQuery(this).scrollTop() >= windowHeight) {
     jQuery('.menu').addClass('menu-scroll')
     jQuery('.navbar-fixed-top').addClass('navbar-scroll')
-    jQuery('.navbar-fixed-top').css('background', 'rgb(55,101,18)')
+    jQuery('.navbar-fixed-top').css('background', '#3cac54')
   } else if (jQuery(this).scrollTop() <= 1) {
     jQuery('.menu').removeClass('menu-scroll')
     jQuery('.navbar-fixed-top').removeClass('navbar-scroll')
