@@ -327,6 +327,12 @@ body {
   padding-right: 100px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-section .product-content .product-description .right{
+    padding-right: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .product-section .product-content .product-description .right {
     padding-right: 15px;
@@ -434,6 +440,18 @@ body {
 .about-us-section .about-us-content .about-us-description .left {
   text-align: left;
   padding-left: 140px;
+}
+
+@media (min-width : 992px) and (max-width: 1199px){
+  .about-us-section .about-us-content .about-us-description .left{
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us-section .about-us-content .about-us-description .left{
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -574,9 +592,155 @@ body {
   padding-top: 20px;
 }
 
+.btn-send {
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
 .map {
   height: 300px;
   margin-bottom: 30px;
+}
+
+.visit-us-section {
+  background: url('../img/visit-us-bg.jpg') center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.visit-us-section .visit-us-content {
+  text-align: center;
+  color: #fff;
+}
+
+.visit-us-section .visit-us-content h3 {
+  font-family: 'Comfortaa', cursive;
+}
+
+.visit-us-section .visit-us-content h4 {
+  font-family: 'Comfortaa', cursive;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+}
+
+footer {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+footer .footer-nav{
+  margin-top: 10px;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  footer .footer-logo{
+    text-align: center;
+  }
+  footer .footer-nav{
+    float: none;
+    text-align: center;
+  }
+  footer .footer-nav ul{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+footer .footer-nav li{
+  list-style: none;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer-nav li{
+    margin-right: 15px;
+  }
+}
+
+footer .footer-nav li:last-of-type{
+  margin-right: 0;
+}
+
+footer .footer-nav li a{
+  text-decoration: none;
+  color: #2f312f;
+  font-size: 10pt;
+}
+
+footer .footer-nav li a:hover{
+  color: #3cac54;
+}
+
+footer .second-line {
+  color: #c3c3c3;
+}
+
+@media (max-width: 768px) {
+  footer .second-line{
+    margin-top: 20px;
+  }
+}
+
+footer .copyright {
+  margin-top: 12px;
+  font-size: 9pt;
+}
+
+@media (max-width: 768px) {
+  footer .copyright{
+    text-align: center;
+  }
+}
+
+footer .social-links{
+  float: right;
+}
+
+@media (max-width: 768px) {
+  footer .social-links{
+    text-align: center;
+    float: none;
+  }
+}
+
+footer .social-links a{
+  text-decoration: none;
+  font-size: 22pt;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  footer .social-links a{
+    font-size: 12pt;
+  }
+}
+
+footer .social-links a:first-of-type{
+  margin-left: 20px;
+}
+
+footer .social-links a:last-of-type{
+  margin-right: 0;
+}
+
+footer .social-links .facebook-link {
+  color: #3b5998;
+}
+
+footer .social-links .twitter-link {
+  color: #00aced;
+}
+
+footer .social-links .instagram-link {
+  color: #cd486b;
 }
 
 /*----------------------------------------------------------------
@@ -766,8 +930,7 @@ body {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin: 0 1em;
-	width: calc(100% - 2em);
+	width: 100%;
 	vertical-align: top;
 }
 
