@@ -178,6 +178,38 @@ toastr.options = {
   'positionClass': 'toast-top-full-width'
 }
 
-$('.btn-send').click(function () {
-  toastr.success('Tu mensaje ha sido enviado correctamente, nos comunicaremos contigo lo antes posible.', 'Gracias!', {timeOut: 3000})
-})
+// CONTACT  FORM
+jQuery('.contact-form').on("submit", function(e){
+
+    //jQuery('.ajax-loader').show();
+
+    e.preventDefault();
+
+    var url = 'mail.php',
+        form = this;
+
+    //jQuery(form).find('[name="fields[code]"]').remove();
+
+    function result(class_key, data){
+        setTimeout(function(){
+            jQuery('.ajax-loader').hide();
+            jQuery('.ajax-result').find(class_key).show().text(data);
+        },500);
+    }
+
+    jQuery.ajax({
+        type: "POST",
+        url: url,
+        data: jQuery(form).serialize()
+    })
+    .done(function(data) {
+      var result = data.split(';')
+      if(result[0] === 'success') {
+        toastr.success(result[1], 'Gracias!', {timeOut: 3000})
+        jQuery(form).find("input[type=text], input[type=email], textarea").val('');
+      } else {
+        toastr.error(result[1], 'Error', {timeOut: 3000})
+      }
+    })
+
+});

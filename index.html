@@ -186,9 +186,10 @@
           </div>
           <div class="col-md-6 right">
             <div class="row">
+              <form class="contact-form" action="mail.php" method="POST">
                 <div class="col-sm-6">
                   <span class="input input--isao">
-                  	<input class="input__field input__field--isao" type="text" id="name" />
+                  	<input class="input__field input__field--isao" type="text" id="name" name="fields[name]" />
                   	<label class="input__label input__label--isao" for="name" data-content="Nombre">
                   		<span class="input__label-content input__label-content--isao">Nombre</span>
                   	</label>
@@ -196,7 +197,7 @@
                 </div>
                 <div class="col-sm-6">
                   <span class="input input--isao">
-                  	<input class="input__field input__field--isao" type="text" id="email" />
+                  	<input class="input__field input__field--isao" type="email" id="email" name="fields[email]" />
                   	<label class="input__label input__label--isao" for="email" data-content="Email">
                   		<span class="input__label-content input__label-content--isao">Email</span>
                   	</label>
@@ -204,7 +205,7 @@
                 </div>
                 <div class="col-sm-6">
                   <span class="input input--isao">
-                  	<input class="input__field input__field--isao" type="text" id="phone" />
+                  	<input class="input__field input__field--isao" type="text" id="phone" name="fields[phone]" />
                   	<label class="input__label input__label--isao" for="phone" data-content="Teléfono">
                   		<span class="input__label-content input__label-content--isao">Teléfono</span>
                   	</label>
@@ -212,7 +213,7 @@
                 </div>
                 <div class="col-sm-6">
                   <span class="input input--isao">
-                  	<input class="input__field input__field--isao" type="text" id="subject" />
+                  	<input class="input__field input__field--isao" type="text" id="subject" name="fields[subject]" />
                   	<label class="input__label input__label--isao" for="subject" data-content="Asunto">
                   		<span class="input__label-content input__label-content--isao">Asunto</span>
                   	</label>
@@ -220,14 +221,15 @@
                 </div>
                 <div class="col-sm-12">
                   <span class="input input--isao">
-                  	<textarea class="input__field input__field--isao" type="text" id="message"></textarea>
+                  	<textarea class="input__field input__field--isao" type="text" id="message" name="fields[message]"></textarea>
                   	<label class="input__label input__label--isao" for="message" data-content="Mensaje">
                   		<span class="input__label-content input__label-content--isao">Mensaje</span>
                   	</label>
                   </span>
                 </div>
-                <div class="btn btn-primary btn-send pull-right">Enviar</div>
-              </div>
+                <input type="submit" class="btn btn-primary btn-send pull-right" value="Enviar"></input>
+              </form>
+            </div>
           </div>
         </div>
       </div>
