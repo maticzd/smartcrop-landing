@@ -462,6 +462,10 @@ body {
   text-align: center;
 }
 
+.about-us-section .about-us-content .about-us-team {
+  margin-bottom: 40px;
+}
+
 .about-us-section .about-us-content .about-us-team h3 {
   font-family: 'Comfortaa', cursive;
   margin-bottom: 60px;
