@@ -173,3 +173,11 @@ function initMap() {
     title: 'Hello World!'
   });
 }
+
+toastr.options = {
+  'positionClass': 'toast-top-full-width'
+}
+
+$('.btn-send').click(function () {
+  toastr.success('Tu mensaje ha sido enviado correctamente, nos comunicaremos contigo lo antes posible.', 'Gracias!', {timeOut: 10000})
+})

@@ -1084,3 +1084,17 @@ input:-webkit-autofill {
 	-webkit-transform: translate3d(0, -50%, 0);
 	transform: translate3d(0, -50%, 0);
 }
+
+#toast-container > div {
+  box-shadow: none;
+  top: 80px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 9pt;
+}
+
+#toast-container > :hover {
+    box-shadow: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    cursor: pointer;
+}
