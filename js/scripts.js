@@ -68,7 +68,11 @@ jQuery('.overlay ul li a').click(function () {
 
 $('body').scrollspy({ target: ' ', offset: 100 })
 
-function initMap() { // eslint-disable-line
+jQuery(document).ready(function () {
+  initMap()
+})
+
+function initMap () {
   var myLatLng = {lat: -33.4900965, lng: -70.6184453}
 
   // Create a map object and specify the DOM element for display.
