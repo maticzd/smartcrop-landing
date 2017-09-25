@@ -186,7 +186,7 @@ jQuery('.contact-form').on('submit', function (e) {
   }
 
   // Validate form
-  if (jQuery('input[id=name]').val() === '' || jQuery('input[id=email]').val() === '' || jQuery('input[id=subject]').val() === '' || jQuery('input[id=message]').val() === '') {
+  if (jQuery('input[id=name]').val() === '' || jQuery('input[id=email]').val() === '' || jQuery('input[id=subject]').val() === '' || jQuery('textarea[id=message]').val() === '') {
     toastr.error('Por favor complete todos los campos del formulario.', {timeOut: 3000})
   } else {
     if (!validateEmail(jQuery('input[id=email]').val())) {
