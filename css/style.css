@@ -251,6 +251,12 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+@media (max-width: 768px) {
+  .hero-content .left h1 {
+    font-size: 30px;
+  }
+}
+
 .hero-content .left p {
   color: rgba(255,255,255,.8);
   font-size: 11.3pt;
@@ -264,6 +270,12 @@ body {
   letter-spacing: 1px;
   padding: 10px 20px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-content .left .btn-primary {
+    margin-top: 10px;
+  }
 }
 
 .hero-content .left .btn-primary:hover {
