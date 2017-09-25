@@ -1,4 +1,4 @@
-/* global jQuery, $, SmoothScroll, toastr */
+/* global jQuery, $, SmoothScroll, toastr, google */
 
 /* Sticky menu animations */
 var viewportHeight = $(window).height()
@@ -68,8 +68,8 @@ jQuery('.overlay ul li a').click(function () {
 
 $('body').scrollspy({ target: ' ', offset: 100 })
 
-function initMap() {
-  var myLatLng = {lat: -33.4900965, lng: -70.6184453};
+function initMap() { // eslint-disable-line
+  var myLatLng = {lat: -33.4900965, lng: -70.6184453}
 
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -166,7 +166,7 @@ function initMap() {
   })
 
   // Create a marker and set its position.
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({ // eslint-disable-line
     map: map,
     position: myLatLng,
     icon: './img/smartcrop-marker.png',
@@ -181,7 +181,7 @@ jQuery('.contact-form').on('submit', function (e) {
   e.preventDefault()
 
   function validateEmail (email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     return re.test(email)
   }
 
