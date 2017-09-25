@@ -3,8 +3,8 @@
 /* Sticky menu animations */
 var viewportHeight = $(window).height()
 var windowHeight
-if (viewportHeight > 650) {
-  windowHeight = 650
+if (viewportHeight > 648) {
+  windowHeight = 648
 } else {
   windowHeight = viewportHeight
 }
