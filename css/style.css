@@ -1092,8 +1092,9 @@ input:-webkit-autofill {
 #toast-container > div {
   box-shadow: none;
   top: 80px;
+  padding-left: 15px;
   font-family: 'Comfortaa', cursive;
-  font-size: 9pt;
+  font-size: 10pt;
 }
 
 #toast-container > :hover {
@@ -1101,4 +1102,8 @@ input:-webkit-autofill {
     opacity: 1;
     filter: alpha(opacity=100);
     cursor: pointer;
+}
+
+#toast-container > .toast {
+    background-image: none !important;
 }

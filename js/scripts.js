@@ -174,10 +174,6 @@ function initMap() {
   });
 }
 
-toastr.options = {
-  'positionClass': 'toast-top-full-width'
-}
-
 // CONTACT  FORM
 jQuery('.contact-form').on("submit", function(e){
 
@@ -205,10 +201,10 @@ jQuery('.contact-form').on("submit", function(e){
     .done(function(data) {
       var result = data.split(';')
       if(result[0] === 'success') {
-        toastr.success(result[1], 'Gracias!', {timeOut: 3000})
+        toastr.success(result[1], {timeOut: 3000})
         jQuery(form).find("input[type=text], input[type=email], textarea").val('');
       } else {
-        toastr.error(result[1], 'Error', {timeOut: 3000})
+        toastr.error(result[1], {timeOut: 3000})
       }
     })
 
