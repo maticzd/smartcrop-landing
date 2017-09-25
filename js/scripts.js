@@ -36,7 +36,7 @@ jQuery('.animsition').animsition({
   outClass: 'fade-out',
   inDuration: 800,
   outDuration: 300,
-  linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([data-featherlight="image"])',
+  linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([data-featherlight="image"])a:not([data-fancybox])',
   // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
   loading: true,
   loadingParentElement: 'html', // animsition wrapper element
