@@ -1,4 +1,4 @@
-/* global jQuery, $, SmoothScroll */
+/* global jQuery, $, SmoothScroll, toastr */
 
 /* Sticky menu animations */
 var viewportHeight = $(window).height()
@@ -171,41 +171,44 @@ function initMap() {
     position: myLatLng,
     icon: './img/smartcrop-marker.png',
     title: 'Hello World!'
-  });
+  })
 }
 
 // CONTACT  FORM
-jQuery('.contact-form').on("submit", function(e){
+jQuery('.contact-form').on('submit', function (e) {
+  // jQuery('.ajax-loader').show();
 
-    //jQuery('.ajax-loader').show();
+  e.preventDefault()
 
-    e.preventDefault();
+  function validateEmail (email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email)
+  }
 
-    var url = 'mail.php',
-        form = this;
+  // Validate form
+  if (jQuery('input[id=name]').val() === '' || jQuery('input[id=email]').val() === '' || jQuery('input[id=subject]').val() === '' || jQuery('input[id=message]').val() === '') {
+    toastr.error('Por favor complete todos los campos del formulario.', {timeOut: 3000})
+  } else {
+    if (!validateEmail(jQuery('input[id=email]').val())) {
+      toastr.error('Por favor ingrese un correo eléctronico válido.', {timeOut: 3000})
+    } else {
+      var url = 'mail.php'
+      var form = this
 
-    //jQuery(form).find('[name="fields[code]"]').remove();
-
-    function result(class_key, data){
-        setTimeout(function(){
-            jQuery('.ajax-loader').hide();
-            jQuery('.ajax-result').find(class_key).show().text(data);
-        },500);
-    }
-
-    jQuery.ajax({
-        type: "POST",
+      jQuery.ajax({
+        type: 'POST',
         url: url,
         data: jQuery(form).serialize()
-    })
-    .done(function(data) {
-      var result = data.split(';')
-      if(result[0] === 'success') {
-        toastr.success(result[1], {timeOut: 3000})
-        jQuery(form).find("input[type=text], input[type=email], textarea").val('');
-      } else {
-        toastr.error(result[1], {timeOut: 3000})
-      }
-    })
-
-});
+      })
+      .done(function (data) {
+        var result = data.split(';')
+        if (result[0] === 'success') {
+          toastr.success(result[1], {timeOut: 3000})
+          jQuery(form).find('input[type=text], textarea').val('')
+        } else {
+          toastr.error(result[1], {timeOut: 3000})
+        }
+      })
+    }
+  }
+})
