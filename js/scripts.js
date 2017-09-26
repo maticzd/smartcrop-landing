@@ -54,6 +54,7 @@ jQuery('.animsition').animsition({
   transition: function (url) { window.location.href = url }
 })
 
+/* Mobile navigation menu */
 jQuery('.menu').click(function () {
   jQuery('.menu').toggleClass('open')
   jQuery('.overlay').toggleClass('overlayopen')
@@ -66,8 +67,10 @@ jQuery('.overlay ul li a').click(function () {
   jQuery('body').toggleClass('stop-scrolling')
 })
 
+/* Scrollspy configuration */
 $('body').scrollspy({ target: ' ', offset: 100 })
 
+/* Google map configuration */
 function initMap () { // eslint-disable-line
   var myLatLng = {lat: -33.4900965, lng: -70.6184453}
 
@@ -174,7 +177,7 @@ function initMap () { // eslint-disable-line
   })
 }
 
-// CONTACT  FORM
+/* Contact form logic */
 jQuery('.contact-form').on('submit', function (e) {
   // jQuery('.ajax-loader').show();
 
@@ -213,31 +216,31 @@ jQuery('.contact-form').on('submit', function (e) {
   }
 })
 
-/* Init plant animation */
+/* Plant animation */
 $(window).on('load', function () {
-  $("svg .path1, svg .path2, svg .path3").css({'stroke-dashoffset': 1000});
-  $("svg .path1")
+  $('svg .path1, svg .path2, svg .path3').css({'stroke-dashoffset': 1000})
+  $('svg .path1')
     .stop()
     .delay(2000)
     .animate({
       'stroke-dashoffset': 0
-    }, 4000, "easeInOutQuad");
-  $("svg .path2")
+    }, 4000, 'easeInOutQuad')
+  $('svg .path2')
     .stop()
     .delay(5650)
     .animate({
       'stroke-dashoffset': 0
-    }, 4500, "easeInOutQuad");
-  setTimeout(function(){
-    $("svg .path3")
+    }, 4500, 'easeInOutQuad')
+  setTimeout(function () {
+    $('svg .path3')
       .stop()
       .animate({
         'stroke-dashoffset': 0,
         queue: false
-      }, {queue: false, duration: 4000, ease: "easeInOutQuad"})
+      }, {queue: false, duration: 4000, ease: 'easeInOutQuad'})
       .animate({
         'opacity': 1,
         queue: false
-      }, {queue: false, duration: 300});
-  },7700)
+      }, {queue: false, duration: 300})
+  }, 7700)
 })
