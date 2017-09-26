@@ -434,51 +434,48 @@ body {
   padding: 0 15px;
 }
 
-.about-us-section {
-  background-color: #fafaf8;
-  padding: 100px 0;
+.product-section .product-content .product-social-network {
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .about-us-section {
-    padding: 40px 0 90px 0;
+@media (max-width: 768px){
+  .product-section .product-content .product-social-network {
+    margin-top: 0;
+    margin-bottom: 70px;
   }
 }
 
-.about-us-section .about-us-content .about-us-description {
-  margin-bottom: 90px;
-}
-
-.about-us-section .about-us-content .about-us-description .right {
+.product-section .product-content .product-social-network .right {
   text-align: center;
   padding-top: 20px;
 }
 
-.about-us-section .about-us-content .about-us-description .left {
+.product-section .product-content .product-social-network .left {
   text-align: left;
   padding-left: 140px;
 }
 
 @media (min-width : 992px) and (max-width: 1199px){
-  .about-us-section .about-us-content .about-us-description .left{
+  .product-section .product-content .product-social-network .left{
     padding-left: 90px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .about-us-section .about-us-content .about-us-description .left{
+  .product-section .product-content .product-social-network .left{
     padding-left: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-us-section .about-us-content .about-us-description .left {
+  .product-section .product-content .product-social-network .left {
     padding-left: 15px;
     margin-bottom: 60px;
   }
 }
 
-.about-us-section .about-us-content .about-us-description .left h2{
+.product-section .product-content .product-social-network .left h2{
   font-family: 'Comfortaa', cursive;
   position: relative;
   padding-bottom: 15px;
@@ -486,12 +483,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-us-section .about-us-content .about-us-description .left h2{
+  .product-section .product-content .product-social-network .left h2{
     margin-top:60px;
   }
 }
 
-.about-us-section .about-us-content .about-us-description .left h2:before {
+.product-section .product-content .product-social-network .left h2:before {
   content: "";
   position: absolute;
   width: 50px;
@@ -499,11 +496,78 @@ body {
   border-bottom: 4px solid #eee;
 }
 
-.about-us-section .about-us-content .about-us-description .left h3{
+.product-section .product-content .product-social-network .left h3{
   color: #3cac54;
 }
 
-.about-us-section .about-us-content .about-us-description .left p{
+.product-section .product-content .product-social-network .left p{
+  color: #a6aaae;
+  padding-top: 20px;
+}
+
+.about-us-section {
+  background-color: #fafaf8;
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 90px 0 70px 0;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description {
+  margin-bottom: 90px;
+}
+
+.about-us-section .about-us-content .about-us-description .left {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.about-us-section .about-us-content .about-us-description .right {
+  text-align: left;
+  padding-right: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us-section .about-us-content .about-us-description .right{
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-description .right {
+    padding-right: 15px;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description .right h2{
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  padding-bottom: 15px;
+  color: #2f312f;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-description .right h2{
+    margin-top:60px;
+  }
+}
+
+.about-us-section .about-us-content .about-us-description .right h2:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  border-bottom: 4px solid #eee;
+}
+
+.about-us-section .about-us-content .about-us-description .right h3{
+  color: #3cac54;
+}
+
+.about-us-section .about-us-content .about-us-description .right p{
   color: #a6aaae;
   padding-top: 20px;
 }
