@@ -212,3 +212,26 @@ jQuery('.contact-form').on('submit', function (e) {
     }
   }
 })
+
+/* Init plant animation */
+$(window).on('load', function () {
+  $("svg .path1, svg .path2, svg .path3").css({'stroke-dashoffset': 1000});
+  $("svg .path1")
+    .stop()
+    .delay(2000)
+    .animate({
+      'stroke-dashoffset': 0
+    }, 4000, "easeInOutQuad");
+  $("svg .path2")
+    .stop()
+    .delay(5650)
+    .animate({
+      'stroke-dashoffset': 0
+    }, 4500, "easeInOutQuad");
+  $("svg .path3")
+    .stop()
+    .delay(8000)
+    .animate({
+      'stroke-dashoffset': 0
+    }, 4000, "easeInOutQuad");
+})
