@@ -228,10 +228,16 @@ $(window).on('load', function () {
     .animate({
       'stroke-dashoffset': 0
     }, 4500, "easeInOutQuad");
-  $("svg .path3")
-    .stop()
-    .delay(8000)
-    .animate({
-      'stroke-dashoffset': 0
-    }, 4000, "easeInOutQuad");
+  setTimeout(function(){
+    $("svg .path3")
+      .stop()
+      .animate({
+        'stroke-dashoffset': 0,
+        queue: false
+      }, {queue: false, duration: 4000, ease: "easeInOutQuad"})
+      .animate({
+        'opacity': 1,
+        queue: false
+      }, {queue: false, duration: 300});
+  },7700)
 })
