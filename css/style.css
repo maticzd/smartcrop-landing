@@ -340,7 +340,7 @@ body {
 
 .product-section .product-content .product-description .right {
   text-align: left;
-  padding-top: 20px;
+  padding-top: 6px;
   padding-right: 100px;
 }
 
@@ -353,6 +353,7 @@ body {
 @media (max-width: 768px) {
   .product-section .product-content .product-description .right {
     padding-right: 15px;
+    padding-top: 20px;
   }
 }
 
@@ -418,6 +419,9 @@ body {
   .product-section .product-content .product-steps .step {
     margin-bottom: 50px;
   }
+  .product-section .product-content .product-steps .step:last-of-type {
+    margin-bottom: 30px;
+  }
 }
 
 .product-section .product-content .product-steps .step img {
@@ -454,6 +458,7 @@ body {
 .product-section .product-content .product-social-network .left {
   text-align: left;
   padding-left: 140px;
+  padding-top: 10px;
 }
 
 @media (min-width : 992px) and (max-width: 1199px){
@@ -522,7 +527,13 @@ body {
 
 .about-us-section .about-us-content .about-us-description .left {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .about-us-section .about-us-content .about-us-description .left {
+    padding-top: 20px;
+  }
 }
 
 .about-us-section .about-us-content .about-us-description .right {
@@ -539,6 +550,7 @@ body {
 @media (max-width: 768px) {
   .about-us-section .about-us-content .about-us-description .right {
     padding-right: 15px;
+    padding-top: 20px;
   }
 }
 
