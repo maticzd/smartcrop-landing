@@ -195,6 +195,8 @@ jQuery('.contact-form').on('submit', function (e) {
     if (!validateEmail(jQuery('input[id=email]').val())) {
       toastr.error('Por favor ingrese un correo eléctronico válido.', {timeOut: 3000})
     } else {
+      jQuery('.btn-send').prop('disabled', true)
+      jQuery('.ajax-loader').show()
       var form = this
       emailjs.send("gmail","template_yQy31vVq",{
         subject: jQuery('input[id=subject]').val(),
@@ -204,9 +206,13 @@ jQuery('.contact-form').on('submit', function (e) {
         message: jQuery('textarea[id=message]').val()
       })
       .then(function(response) {
+        jQuery('.ajax-loader').hide()
+        jQuery('.btn-send').prop('disabled', false);
         toastr.success('Tu mensaje se ha enviado correctamente, nos contactaremos contigo lo antes posible.', {timeOut: 3000})
         jQuery(form).find('input[type=text], textarea').val('')
       }, function(err) {
+        jQuery('.ajax-loader').hide()
+        jQuery('.btn-send').prop('disabled', false);
         toastr.error('Error al enviar el mensaje, por favor intentelo más tarde', {timeOut: 3000})
       })
     }
