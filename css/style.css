@@ -630,12 +630,12 @@ body {
 
 .contact-us-section {
   background-color: #ffffff;
-  padding: 0 0 100px 0;
+  padding: 50px 0 0 0;
 }
 
 @media (max-width: 768px) {
   .contact-us-section {
-    padding: 0 0 90px 0;
+    padding: 0;
   }
 }
 
@@ -692,7 +692,7 @@ body {
 
 .map {
   height: 300px;
-  margin-bottom: 30px;
+  margin-top: 80px;
 }
 
 .collaborators-section {
