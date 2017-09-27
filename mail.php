@@ -1,8 +1,8 @@
 <?php
 
 // variable
-$fromemail = 'maticzd@gmail.com'; // from mail
-$to = "maticzd@gmail.com"; // to mail
+$fromemail = 'no-responder@lightup.cl'; // from mail
+$to = "lightup.utfsm@gmail.com"; // to mail
 
 
 // check data
@@ -43,7 +43,7 @@ $subject = str_replace("+","_",$subject);
 // content massage
 $message = "<b>Nombre: </b> " . $fields['name'] . "<br>";
 $message .= "<b>Mail: </b> " . $fields['email'] . "<br>";
-/*$message .= "<b>Client phone: </b> ".$site."<br>";*/
+$message .= "<b>Teléfono: </b> ".$fields['phone']."<br>";
 $message .= "<b>Asunto: </b> " . $fields['subject'] . "<br>";
 $message .= "<b>Mensaje:</b>\n" . $fields['message'] . "<br>";
 
