@@ -385,6 +385,7 @@ body {
 .product-section .product-content .product-description .right p{
   color: #a6aaae;
   padding-top: 20px;
+  text-align: justify;
 }
 
 .product-section .product-content .product-steps {
@@ -508,6 +509,7 @@ body {
 .product-section .product-content .product-social-network .left p{
   color: #a6aaae;
   padding-top: 20px;
+  text-align: justify;
 }
 
 .about-us-section {
@@ -582,6 +584,7 @@ body {
 .about-us-section .about-us-content .about-us-description .right p{
   color: #a6aaae;
   padding-top: 20px;
+  text-align: justify;
 }
 
 .about-us-section .about-us-content .about-us-team {
@@ -679,6 +682,7 @@ body {
 .contact-us-section .contact-us-content .left p{
   color: #a6aaae;
   padding-top: 20px;
+  text-align: justify;
 }
 
 .contact-us-section .contact-us-content .right {
