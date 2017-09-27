@@ -684,6 +684,10 @@ body {
   text-align: justify;
 }
 
+.contact-us-section .contact-us-content .left p:last-of-type{
+  font-size: 13pt;
+}
+
 .contact-us-section .contact-us-content .right {
   padding-top: 20px;
 }
