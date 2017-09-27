@@ -219,6 +219,11 @@ jQuery('.contact-form').on('submit', function (e) {
   }
 })
 
+/* Fancybox configuration */
+$('[data-fancybox]').fancybox({
+  buttons: [ 'close' ]
+})
+
 /* Plant animation */
 $(window).on('load', function () {
   $('svg .path1, svg .path2, svg .path3').css({'stroke-dashoffset': 1000})
