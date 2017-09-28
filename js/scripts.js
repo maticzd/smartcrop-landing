@@ -1,4 +1,4 @@
-/* global jQuery, $, SmoothScroll, toastr, google */
+/* global jQuery, $, SmoothScroll, toastr, google, emailjs */
 
 /* Sticky menu animations */
 var viewportHeight = $(window).height()
@@ -198,21 +198,22 @@ jQuery('.contact-form').on('submit', function (e) {
       jQuery('.btn-send').prop('disabled', true)
       jQuery('.ajax-loader').show()
       var form = this
-      emailjs.send("gmail","template_yQy31vVq",{
+      emailjs.send('gmail', 'template_yQy31vVq', {
         subject: jQuery('input[id=subject]').val(),
         from_name: jQuery('input[id=name]').val(),
         from_phone: jQuery('input[id=phone]').val(),
         from_email: jQuery('input[id=email]').val(),
         message: jQuery('textarea[id=message]').val()
       })
-      .then(function(response) {
+      .then(function (response) {
         jQuery('.ajax-loader').hide()
-        jQuery('.btn-send').prop('disabled', false);
+        jQuery('.btn-send').prop('disabled', false)
         toastr.success('Tu mensaje se ha enviado correctamente, nos contactaremos contigo lo antes posible.', {timeOut: 3000})
         jQuery(form).find('input[type=text], textarea').val('')
-      }, function(err) {
+      }, function (err) {
+        console.log(err)
         jQuery('.ajax-loader').hide()
-        jQuery('.btn-send').prop('disabled', false);
+        jQuery('.btn-send').prop('disabled', false)
         toastr.error('Error al enviar el mensaje, por favor intentelo más tarde', {timeOut: 3000})
       })
     }
