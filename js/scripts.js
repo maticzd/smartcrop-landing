@@ -253,3 +253,5 @@ $(window).on('load', function () {
       }, {queue: false, duration: 300})
   }, 7700)
 })
+
+emailjs.init('user_oXaKTHoWE7rtfAul7Tp2A')
