@@ -26,9 +26,9 @@ body {
   background: #2e8c42;
   border: none;
 }
-.btn-primary.active, .btn-primary:active { /* csslint allow: adjoining-classes */
-  background-color: #2e8c42 ;
-  border: none ;
+.btn-primary:active {
+  background-color: #2e8c42 !important;
+  border: none !important;
 }
 
 .navbar-fixed-top {
@@ -80,11 +80,11 @@ body {
 }
 
 .navbar-brand img{
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
   display: inline-block;
   height: 40px;
   padding-right: 12px;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   vertical-align: baseline;
 }
@@ -105,14 +105,14 @@ body {
 }
 
 .navbar-slogan p{
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
   color: #fff;
-  display: inline-block;
+  display: inline-block !important;
   font-family: 'Comfortaa', cursive;
   font-size: 9pt;
   font-weight: 300;
   padding-top: 36px;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   vertical-align: baseline;
 }
@@ -123,15 +123,15 @@ body {
 }
 
 .navbar-nav > li > a {
-  color: rgb(255, 255, 255);
-  color: rgba(255, 255, 255, .8) !important; /* csslint allow: important */
-  font-size: 10pt;
   font-weight: 300;
-  line-height: 25px;
-  margin: 28px 15px 17px 15px;
+  font-size: 10pt;
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .8) !important;
   padding: 0;
-  -moz-transition: 0.2s ease-in-out;
+  margin: 28px 15px 17px 15px;
+  line-height: 25px;
   -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -140,26 +140,23 @@ body {
 }
 
 .navbar-nav > li > a:before {
-  background-color: #fff;
-  bottom: 0;
   content: "";
-  height: 2px;
-  left: 0;
   position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  visibility: hidden;
-  width: 100%;
 }
-.navbar-default .navbar-nav>.active>a,
-.navbar-nav > li > a:hover,
-.navbar-nav > li.active > a,
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: transparent;
-  color: #ffffff;
+.navbar-nav > li > a:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
 }
 .navbar-nav > li > a:hover:before {
   -webkit-transform: scaleX(1);
@@ -167,7 +164,10 @@ body {
   transform: scaleX(1);
   visibility: visible;
 }
-
+.navbar-nav > li.active > a {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
 .navbar-nav > li.active > a:before {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -175,32 +175,46 @@ body {
   visibility: visible;
 }
 
-.navbar-toggle {
-  border: none;
-  margin-right: 10px;
-  margin-top: 19px;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse.collapse.in {
+    border: none;
+    background: #53C419;
+  }
 }
 
-.navbar-scroll .navbar-toggle {
+.navbar-toggle {
   border: none;
+  margin-top: 19px;
+  margin-right: 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.navbar-scroll .navbar-toggle {
   margin-top: 14px;
+  border: none;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle:focus {
+  background: transparent !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 .home-hero-section {
-  align-items: center;
   background: url(../img/hero-section-bg.jpg) center right;
   background-size: cover;
-  box-sizing: border-box; /* csslint allow: box-sizing */
+  overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
-  height: 100vh;
+  align-items: center;
   justify-content: center;
-  max-height: 648px;
+  height: 100vh;
   min-height: 450px;
-  overflow: hidden;
+  max-height: 648px;
   padding-top: 70px;
 }
 
@@ -211,8 +225,8 @@ body {
 }
 
 .hero-content {
-  color: #fff;
   padding-top: 80px;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -222,7 +236,7 @@ body {
 }
 
 .hero-content .left{
-  padding: 100px 0 90px 70px;
+  padding: 100px 0px 90px 70px;
 }
 
 @media (max-width: 768px) {
